@@ -1,0 +1,619 @@
+:root {
+    /* color */
+    --main-color: #e33f46;
+    --white-color: #fcfcfc;
+    --black-color: #030303;
+    --dark-grey-color: #3c3c3c;
+    --grey-color: #808080;
+    --light-grey-color: #d1d1d1;
+
+    /* font-size */
+    --font-xlarge: 18px;
+    --font-large: 16px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+    --font-h1: 28px;
+    --font-h2: 24px;
+}
+
+body {
+    font-family: 'Albert Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.inner {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+/* 토글 클래스 */
+.grid {
+    display: grid !important;
+}
+.flex {
+    display: flex !important;
+}
+.block {
+    display: block !important
+}
+.none {
+    display: none !important; 
+}
+.fill-main-color {
+    background: var(--main-color) !important;
+}
+
+/* header */
+header {
+    margin-bottom: 18px;
+}
+/* section1 */
+header .section1 {
+    border-bottom: 1px solid var(--light-grey-color);
+    box-sizing: border-box;
+}
+header .section1 .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 10px 0;
+}
+header .section1 .inner .logo {
+    width: 300px;
+}
+header .section1 .inner .logo img {
+    width: 100%;
+}
+
+header .section1 .inner .icon-group {
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+header .section1 .inner .icon-group a {
+    font-size: 20px;
+    color: var(--dark-grey-color);
+    padding: 6px;
+    box-sizing: border-box;
+}
+header .section1 .inner .icon-group a:hover {
+    color: var(--main-color);
+}
+
+/* section2 */
+header .section2 {
+    border-bottom: 1px solid var(--light-grey-color);
+    box-sizing: border-box;
+}
+header .section2 .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding: 10px 0;
+}
+/* bottom-menu */
+header .section2 .inner .menu>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+}
+header .section2 .inner .menu>ul .category {
+    display: block;
+    width: 114px;
+    height: 50px;
+    background-color: var(--main-color);
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 100;
+}
+header .section2 .inner .menu>ul .category:hover {
+    background: var(--dark-grey-color);
+}
+header .section2 .inner .menu>ul .category .category-btn {
+    color: var(--white-color);
+    font-weight: 500;
+}
+header .section2 .inner .menu>ul .category .category-btn i {
+    margin-right: 4px;
+}
+header .section2 .inner .menu>ul .category .category-area {
+    display: none;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1.2fr;
+    width: 1300px;
+    background: var(--white-color);
+    border: 1px solid var(--light-grey-color);
+}
+header .section2 .inner .menu>ul .category .category-area .submenu {
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+header .section2 .inner .menu>ul .category .category-area .submenu .submenu-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 40px;
+    border-radius: 100px;
+    background: var(--main-color);
+    color: var(--white-color);
+    font-size: var(--font-large);
+    font-weight: 500;
+    transition: 0.5s;
+}
+header .section2 .inner .menu>ul .category .category-area .submenu .submenu-title:hover {
+    background: var(--dark-grey-color);
+}
+header .section2 .inner .menu>ul .category .category-area .submenu .submenu-list {
+
+}
+header .section2 .inner .menu>ul .category .category-area .submenu .submenu-list li {
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+header .section2 .inner .menu>ul .category .category-area .submenu .submenu-list li a {
+    padding: 6px;
+    position: relative;
+}
+header .section2 .inner .menu>ul .category .category-area .submenu .submenu-list li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 44px;
+    left: 0;
+    right: 0;
+    background: var(--main-color);
+    transition: 0.5s;
+    transform: scaleX(0);
+}
+header .section2 .inner .menu>ul .category .category-area .submenu .submenu-list li a:hover {
+    color: var(--main-color);
+}
+header .section2 .inner .menu>ul .category .category-area .submenu .submenu-list li a:hover::after {
+    color: var(--main-color);
+    transform: scaleX(100%);
+}
+
+header .section2 .inner .menu>ul>li>a {
+    font-weight: 500;
+    padding: 6px;
+    box-sizing: border-box;
+}
+header .section2 .inner .menu>ul>li:not(:first-child)>a:hover {
+    color: var(--main-color);
+}
+
+/* bottom-search-area */
+header .section2 .inner .search-area {
+    width: 260px;
+    height: 100%;
+    border-radius: 30px;
+    background: var(--light-grey-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    box-sizing: border-box;
+}
+header .section2 .inner .search-area input {
+    background: inherit;
+    font-size: var(--font-medium);
+    width: 210px;
+}
+header .section2 .inner .search-area i {
+    color: var(--dark-grey-color);
+}
+
+/* container */
+.container {
+    
+}
+.container .inner {
+    
+}
+
+/* section 공통사항 */
+.container .inner section {
+    border-bottom: 1px solid var(--light-grey-color);
+}
+.container .inner section h1{
+    font-size: var(--font-h1);
+    font-weight: 500;
+}
+
+/* section1 */
+.container .inner .section1 {
+    height: 400px;
+    position: relative;
+}
+.container .inner .section1 .banner-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.container .inner .section1 .banner-list li {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-shrink: 0;
+    transition: left 0.15s;
+}
+
+.container .inner .section1 .banner-list li a {
+
+}
+.container .inner .section1 .banner-list li a img {
+    width: 100%;
+    height: 100%;
+}
+.container .inner .section1 .slider-btn {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.container .inner .section1 .slider-btn button {
+    border: none;
+    background: var(--light-grey-color);
+    opacity: 0.5;
+    width: 32px;
+    height: 32px;
+    border-radius: 18px;
+    font-size: var(--font-xlarge);
+    cursor: pointer;
+}
+.container .inner .section1 .pagination {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container .inner .section1 .pagination li {
+    color: var(--white-color);
+    opacity: 0.8;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.container .inner .section1 .pagination li:last-child {
+    margin-right: 0;
+}
+.container .inner .section1 .pagination li.active {
+    color: var(--main-color);
+}
+
+/* section2, 3 공통사항 */
+.container .inner .section2,
+.container .inner .section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 36px 0;
+    box-sizing: border-box;
+    height: 530px;
+}
+.container .inner .section2 .more-btn,
+.container .inner .section3 .more-btn {
+    align-self: center;
+    padding: 10px 16px;
+    background: var(--dark-grey-color);
+    color: var(--white-color);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-large);
+    font-weight: 500;
+    transition: 0.5s;
+}
+.container .inner .section2 .more-btn:hover,
+.container .inner .section3 .more-btn:hover {
+    background: var(--grey-color);
+}
+
+.description {
+    position: relative;
+    padding: 16px;
+    height: 140px;
+    box-sizing: border-box;
+}
+.description .item-name {
+    line-height: 20px;
+    font-size: var(--font-large);
+    font-weight: 500;
+}
+.description .item-price {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+}
+.description .item-price .percent {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+.description .item-price .price {
+    
+}
+.description .item-price .price .original-price {
+    display: block;
+    font-size: var(--font-small);
+    color: var(--grey-color);
+    text-decoration: line-through;
+    text-align: right;
+    margin-bottom: 4px;
+}
+.description .item-price .price .discount-price {
+    display: block;
+    font-weight: 500;
+    font-size: var(--font-large);
+}
+
+/* section2 */
+.container .inner .section2 {
+    
+}
+.container .inner .section2 h1 {
+
+}
+.container .inner .section2 .new-arrival {
+    display: flex;
+    justify-content: space-between;
+    height: 340px;
+}
+.container .inner .section2 .new-arrival li {
+    width: 300px;
+    height: 100%;
+    border: 1px solid var(--light-grey-color);
+}
+.container .inner .section2 .new-arrival li a {
+
+}
+.container .inner .section2 .new-arrival li a img {
+    width: 100%;
+}
+
+/* section3 */
+.container .inner .section3 {
+    position: relative;
+}
+.container .inner .section3 h1 {
+
+}
+.container .inner .section3 .tabmenu-ranking {
+    display: flex;
+    justify-content: space-between;
+    height: 340px;
+
+}
+.container .inner .section3 .tabmenu-ranking .tabmenu {
+    display: flex;
+    width: 1000px;
+    box-sizing: border-box;
+}
+.container .inner .section3 .tabmenu-ranking .tabmenu>li {
+
+}
+.container .inner .section3 .tabmenu-ranking .tabmenu>li .tab-title {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    width: 100px;
+    height: 40px;
+    background: var(--dark-grey-color);
+    color: var(--white-color);
+    font-weight: 500;
+    transition: 0.25s;
+}
+.container .inner .section3 .tabmenu-ranking .tabmenu>li .tab-title:hover {
+    background: var(--main-color);
+}
+.container .inner .section3 .tabmenu-ranking .tabmenu> li .tab-list {
+    display: none;
+    justify-content: space-between;
+    width: 1000px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    border: 1px solid var(--light-grey-color);
+    box-sizing: border-box;
+    padding: 30px;
+    background: #ffffff;
+}
+.container .inner .section3 .tabmenu-ranking .tabmenu> li .tab-list>li {
+    width: 210px;
+    height: 100%;
+    border: 1px solid var(--light-grey-color);
+}
+.container .inner .section3 .tabmenu-ranking .tabmenu> li .tab-list>li a {
+    
+}
+.container .inner .section3 .tabmenu-ranking .tabmenu> li .tab-list>li a img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+/* section3 작은사이즈에 맞춘 탭메뉴 */
+.container .inner .section3 .tabmenu-ranking .tabmenu> li .tab-list>li a .description {
+    height: 120px;
+    padding: 12px;
+}
+.container .inner .section3 .tabmenu-ranking .tabmenu> li .tab-list>li a .description .item-name {
+    line-height: 16px;
+    font-size: var(--font-medium);
+}
+.container .inner .section3 .tabmenu-ranking .tabmenu> li .tab-list>li a .description .item-price {
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+}
+.container .inner .section3 .tabmenu-ranking .tabmenu> li .tab-list>li a .description .item-price .percent {
+    font-size: 28px;
+}
+.container .inner .section3 .tabmenu-ranking .tabmenu> li .tab-list>li a .description .item-price .price .original-price {
+    font-size: var(--font-micro);
+    margin-bottom: 2px;
+}
+.container .inner .section3 .tabmenu-ranking .tabmenu> li .tab-list>li a .description .item-price .price .discount-price {
+    font-size: var(--font-medium);
+}
+
+.container .inner .section3 .tabmenu-ranking .rangking {
+    margin-right: 40px;
+}
+.container .inner .section3 .tabmenu-ranking .rangking h2 {
+    font-size: var(--font-h2);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.container .inner .section3 .tabmenu-ranking .rangking .brand-ranking {
+
+}
+.container .inner .section3 .tabmenu-ranking .rangking .brand-ranking li {
+    margin-bottom: 16px;
+    width: 100%;
+}
+.container .inner .section3 .tabmenu-ranking .rangking .brand-ranking li a {
+    font-size: var(--font-medium);
+    color: var(--black-color);
+    display: flex;
+    justify-content: space-between;
+}
+.container .inner .section3 .tabmenu-ranking .rangking .brand-ranking li a:hover {
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+/* footer */
+footer {
+    background: var(--black-color);
+}
+
+/* section1 */
+footer .section1 {
+    border-bottom: 1px solid var(--grey-color);
+}
+footer .section1 .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 900px;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+/* dl 공통사항 */
+footer .section1 .inner dl {
+
+}
+footer .section1 .inner dl dt {
+    font-size: var(--font-medium);
+    font-weight: 500;
+    margin-bottom: 18px;
+    color: var(--white-color);
+}
+footer .section1 .inner dl dd {
+    font-size: var(--font-small);
+    color: var(--light-grey-color);
+    margin-bottom: 14px;
+}
+footer .section1 .inner dl dd:hover {
+    text-decoration: underline;
+}
+footer .section1 .inner dl dd a {
+    color: var(--light-grey-color);
+}
+/* dl 개별사항 */
+footer .section1 .inner .service-center-number {
+    
+}
+footer .section1 .inner .service-center-number .telephone-number {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: var(--white-color);
+}
+footer .section1 .inner .service-center-number dd {
+    margin-bottom: 6px;
+}
+footer .section1 .inner .service-center-number dd span {
+    font-weight: 700;
+    margin-right: 8px;
+}
+footer .section1 .inner .sns {
+    
+}
+footer .section1 .inner .sns dd {
+    display: inline-block;
+    margin-right: 8px;
+}
+footer .section1 .inner .sns dd a {
+    width: 24px;
+    height: 24px;
+    border-radius: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-color);
+}
+footer .section1 .inner .sns dd a:hover {
+    background: var(--white-color);
+}
+footer .section1 .inner .sns dd a i {
+    font-size: var(--font-large);
+    color: var(--black-color);
+}
+
+/* section2 */
+footer .section2 {
+
+}
+footer .section2 .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 900px;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+footer .section2 .inner .company-info {
+    color: var(--light-grey-color);
+    font-size: var(--font-micro);
+}
+footer .section2 .inner .company-info span {
+    display: block;
+    margin-bottom: 4px;
+}
+footer .section2 .inner .payment-info {
+    color: var(--light-grey-color);
+    font-size: var(--font-small);
+}
+footer .section2 .inner .payment-info span {
+    display: block;
+    margin-bottom: 10px;
+}
+footer .section2 .inner .payment-info span a {
+    color: var(--light-grey-color);
+    text-decoration: underline;
+}
+footer .section2 .inner .payment-info span a:hover {
+    color: var(--white-color);
+}
