@@ -35,9 +35,12 @@ categoryBtnClose.addEventListener('mouseout', () => {
 // validation
 const validation = document.querySelector('.validation');
 
-if (password.value > 8) {
+join.password.addEventListener('focus', () => {
   validation.classList.add('inline');
-}
+})
+join.password.addEventListener('blur', () => {
+  validation.classList.remove('inline');
+})
 
 // footer
 // to top
