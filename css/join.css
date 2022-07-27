@@ -221,320 +221,167 @@ header nav .inner .search-area i {
     color: var(--dark-grey-color);
 }
 
-/* section 공통사항 */
-main section .inner {
-    border-bottom: 1px solid var(--light-grey-color);
+/* main */
+main {
+    width: 100%;
 }
-main section:last-child {
-    padding-bottom: 100px;
+main .inner {
+    width: 400px;
+    padding: 0;
+    margin: 100px auto;
 }
-main section:last-child .inner {
-    border-bottom: 0;
-}
-
-/* section1 */
-main .section1 {
-    height: 400px;
-    position: relative;
-}
-main .section1 .inner {
+main .inner .join {
     
 }
-main .section1 .inner .banner-list {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-}
-main .section1 .inner .banner-list li {
-    position: relative;
-    left: 0;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-shrink: 0;
-    transition: left 0.15s;
-}
-
-main .section1 .inner .banner-list li a {
-
-}
-main .section1 .inner .banner-list li a img {
-    width: 100%;
-    height: 100%;
-}
-main .section1 .inner .slider-btn {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-}
-main .section1 .inner .slider-btn button {
-    background: var(--light-grey-color);
-    opacity: 0.5;
-    width: 32px;
-    height: 32px;
-    border-radius: 18px;
-    font-size: var(--font-xlarge);
-}
-main .section1 .inner .pagination {
-    display: flex;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-main .section1 .inner .pagination li {
-    color: var(--white-color);
-    opacity: 0.8;
-    font-size: 30px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-main .section1 .inner .pagination li:last-child {
-    margin-right: 0;
-}
-main .section1 .inner .pagination li.active {
-    color: var(--main-color);
-}
-
-/* section common 공통사항 */
-main .section-common .inner {
-    display: flex;
-    flex-direction: column;
-    padding: 36px 0;
-    box-sizing: border-box;
-}
-main .section-common .inner h1{
+main .inner .join h1 {
+    text-align: center;
     font-size: var(--font-h1);
     font-weight: 700;
-    font-family: 'Albert Sans', sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    color: var(--dark-grey-color);
 }
-main .section-common .inner .more-btn {
-    align-self: center;
-    padding: 10px 16px;
-    background: var(--dark-grey-color);
-    color: var(--white-color);
-    border-radius: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--font-large);
-    font-weight: 500;
-    transition: 0.5s;
-    margin-top: 40px;
-}
-main .section-common .inner .more-btn:hover {
-    background: var(--grey-color);
-}
-
-/* section2, 3 공통사항 */
-.description {
-    position: relative;
-    padding: 16px;
-    height: 140px;
-    box-sizing: border-box;
-}
-.description .item-name {
-    line-height: 20px;
-    font-size: var(--font-large);
-    font-weight: 500;
-}
-.description .item-price {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 16px;
-    left: 16px;
-    right: 16px;
-}
-.description .item-price .percent {
-    font-size: 32px;
-    font-weight: 700;
-    color: var(--main-color);
-}
-.description .item-price .price {
-    
-}
-.description .item-price .price .original-price {
-    display: block;
-    font-size: var(--font-small);
-    color: var(--grey-color);
-    text-decoration: line-through;
-    text-align: right;
-    margin-bottom: 4px;
-}
-.description .item-price .price .discount-price {
-    display: block;
+main .inner .join h2 {
     font-weight: 500;
     font-size: var(--font-large);
 }
-
-/* section2 */
-main .section2 .inner {
-    
-}
-main .section2 .inner h1 {
-
-}
-main .section2 .inner .new-arrival {
-    display: flex;
-    justify-content: space-between;
-    height: 340px;
-}
-main .section2 .inner .new-arrival li {
-    width: 300px;
-    height: 100%;
-    border: 1px solid var(--light-grey-color);
-}
-main .section2 .inner .new-arrival li a {
-
-}
-main .section2 .inner .new-arrival li a img {
+main .inner .join input[type=text],
+main .inner .join input[type=password],
+main .inner .join input[type=submit] {
     width: 100%;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid var(--light-grey-color);
+    font-size: var(--font-large);
+    margin-bottom: 20px;
+}
+main .inner .join input:focus {
+    border: 1px solid var(--grey-color);
+}
+main .inner .join .agree {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+main .inner .join .agree input[type=checkbox] {
+    cursor: pointer;
+    margin: 0 5px 0 0;
+}
+main .inner .join .agree span {
+    font-size: var(--font-medium);
 }
 
-/* section3 */
-main .section3 .inner {
-    position: relative;
-}
-main .section3 .inner h1 {
-
-}
-main .section3 .inner .tabmenu-ranking {
+main .inner .join .sex {
     display: flex;
     justify-content: space-between;
-    height: 340px;
-
+    margin-bottom: 100px;
 }
-main .section3 .inner .tabmenu-ranking .tabmenu {
-    display: flex;
-    width: 1000px;
-    box-sizing: border-box;
-}
-main .section3 .inner .tabmenu-ranking .tabmenu>li {
-
-}
-main .section3 .inner .tabmenu-ranking .tabmenu>li .tab-title {
-    display: block;
-    text-align: center;
-    line-height: 40px;
-    width: 100px;
-    height: 40px;
-    background: var(--dark-grey-color);
-    color: var(--white-color);
-    font-weight: 500;
-    transition: 0.25s;
-}
-main .section3 .inner .tabmenu-ranking .tabmenu>li .tab-title.fill-main-color {
-    background: var(--main-color) !important;
-}
-main .section3 .inner .tabmenu-ranking .tabmenu>li .tab-title:hover {
-    background: var(--main-color);
-}
-main .section3 .inner .tabmenu-ranking .tabmenu> li .tab-list {
+main .inner .join input[type=radio] {
     display: none;
+}
+main .inner .join input[type=radio]+label {
+    cursor: pointer;
+    width: 48%;
+    height: 50px;
+    border: 1px solid #cccccc;
+    line-height: 50px;
+    text-align: center;
+}
+main .inner .join input[type=radio]:checked+label {
+    background: var(--dark-grey-color);
+    color: var(--white-color);
+}
+main .inner .join .sex label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .inner .join .sex img {
+    display: none;
+    width: 15px;
+    margin-right: 5px;
+}
+
+main .inner .join .terms {
+    margin-bottom: 50px;
+}
+main .inner .join .terms .terms-title {
+    display: flex;
     justify-content: space-between;
-    width: 1000px;
-    height: 300px;
-    position: absolute;
-    left: 0;
-    border: 1px solid var(--light-grey-color);
+    margin-bottom: 7px;
+}
+main .inner .join .terms .terms-title a {
+    font-size: var(--font-small);
+}
+main .inner .join .terms .scroll-box {
+    width: 100%;
+    height: 200px;
+    overflow: scroll;
+    border: 1px solid #cccccc;
+    font-size: var(--font-small);
+    line-height: 15px;
+    padding: 7px;
     box-sizing: border-box;
-    padding: 30px;
-    background: #ffffff;
 }
-main .section3 .inner .tabmenu-ranking .tabmenu> li .tab-list.flex {
-    display: flex;
+main .inner .join .terms .scroll-box h3 {
+    font-weight: 600;
 }
-main .section3 .inner .tabmenu-ranking .tabmenu> li .tab-list>li {
-    width: 210px;
-    height: 100%;
-    border: 1px solid var(--light-grey-color);
-}
-main .section3 .inner .tabmenu-ranking .tabmenu> li .tab-list>li a {
-    
-}
-main .section3 .inner .tabmenu-ranking .tabmenu> li .tab-list>li a img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-}
-/* section3 작은사이즈에 맞춘 탭메뉴 */
-main .section3 .inner .tabmenu-ranking .tabmenu> li .tab-list>li a .description {
-    height: 120px;
-    padding: 12px;
-}
-main .section3 .inner .tabmenu-ranking .tabmenu> li .tab-list>li a .description .item-name {
-    line-height: 16px;
-    font-size: var(--font-medium);
-}
-main .section3 .inner .tabmenu-ranking .tabmenu> li .tab-list>li a .description .item-price {
-    bottom: 12px;
-    left: 12px;
-    right: 12px;
-}
-main .section3 .inner .tabmenu-ranking .tabmenu> li .tab-list>li a .description .item-price .percent {
-    font-size: 28px;
-}
-main .section3 .inner .tabmenu-ranking .tabmenu> li .tab-list>li a .description .item-price .price .original-price {
-    font-size: var(--font-micro);
-    margin-bottom: 2px;
-}
-main .section3 .inner .tabmenu-ranking .tabmenu> li .tab-list>li a .description .item-price .price .discount-price {
-    font-size: var(--font-medium);
-}
-
-main .section3 .inner .tabmenu-ranking .rangking {
-    margin-right: 40px;
-}
-main .section3 .inner .tabmenu-ranking .rangking h2 {
-    font-size: var(--font-h2);
-    font-weight: 700;
-    margin-bottom: 20px;
-    font-family: 'Albert Sans', sans-serif;
-}
-main .section3 .inner .tabmenu-ranking .rangking .brand-ranking {
-
-}
-main .section3 .inner .tabmenu-ranking .rangking .brand-ranking li {
-    margin-bottom: 16px;
-    width: 100%;
-}
-main .section3 .inner .tabmenu-ranking .rangking .brand-ranking li a {
-    font-size: var(--font-medium);
-    color: var(--black-color);
-    display: flex;
-    justify-content: space-between;
-}
-main .section3 .inner .tabmenu-ranking .rangking .brand-ranking li a:hover {
-    color: var(--main-color);
+main .inner .join .terms .scroll-box h4 {
     font-weight: 500;
 }
 
-/* section4 */
-main .section4 .inner {
-    height: 100%;
+main .inner .join .personal-info {
+    margin-bottom: 50px;
 }
-main .section4 .inner h1 {
+main .inner .join .personal-info h2 {
+    margin-bottom: 7px;
+}
+main .inner .join .personal-info table {
+    font-size: var(--font-small);
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+main .inner .join .personal-info table th,
+main .inner .join .personal-info table td {
+    vertical-align: middle;
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+main .inner .join .personal-info table thead th {
+    height: 30px;
+    font-weight: 600;
+}
+main .inner .join .personal-info table tbody td {
+    height: 120px;
+    line-height: 16px;
+}
+main .inner .join .personal-info table tbody tr:nth-child(2) td {
+    height: 70px;
+}
+main .inner .join .personal-info table tbody tr td:last-child {
+    font-weight: 600;
+    font-size: var(--font-small);
+}
 
+
+
+main .inner .submit-btn {
+    background: #333333;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
 }
-main .section4 .inner h1 i {
-    margin-left: 10px;
-    color: var(--main-color);
-    font-size: 38px;
+main .inner .submit-btn:hover {
+    background-color: #606060;
 }
-main .section4 .inner .youtube {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-main .section4 .inner .youtube iframe {
-    margin-bottom: 20px;
+main .inner .submit-btn a {
+    color: #ffffff;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 /* footer */

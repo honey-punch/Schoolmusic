@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스쿨뮤직 리뉴얼</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/join.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- javascript -->
+    <script src="./js/join.js" defer></script>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/9dd32a8b92.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- logo user -->
+      <div class="logo-user">
+        <div class="inner">
+          <a class="logo" href="index.html"
+            ><img src="./img/logo.png" alt="logo"
+          /></a>
+          <div class="icon-group">
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- nav -->
+      <nav>
+        <div class="inner">
+          <ul class="menu">
+            <!-- category -->
+            <li class="category">
+              <button class="category-btn open">
+                <i class="fa-solid fa-bars"></i>
+                <span>카테고리</span>
+              </button>
+              <button class="category-btn close">
+                <i class="fa-solid fa-x"></i>
+                <span>카테고리</span>
+              </button>
+              <ul class="category-area">
+                <li class="submenu">
+                  <a class="submenu-title">GUITARS</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">어쿠스틱기타</a></li>
+                    <li><a href="#">일렉기타</a></li>
+                    <li><a href="#">베이스기타</a></li>
+                    <li><a href="#">클래식기타</a></li>
+                    <li><a href="#">우쿨렐레</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">AMPS</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">기타앰프</a></li>
+                    <li><a href="#">베이스앰프</a></li>
+                    <li><a href="#">어쿠스틱앰프</a></li>
+                    <li><a href="#">멀티/미니앰프</a></li>
+                    <li><a href="#">헤드폰/스피커</a></li>
+                    <li><a href="#">P/A장비</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">EFFECTORS</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">보컬이펙터</a></li>
+                    <li><a href="#">기타이펙터</a></li>
+                    <li><a href="#">베이스이펙터</a></li>
+                    <li><a href="#">통기타이펙터</a></li>
+                    <li><a href="#">멀티이펙터</a></li>
+                    <li><a href="#">그 외 이펙터/악세사리</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">PICK-UP·PARTS</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">픽업</a></li>
+                    <li><a href="#">브릿지</a></li>
+                    <li><a href="#">헤드머신</a></li>
+                    <li><a href="#">그 외 파츠</a></li>
+                    <li><a href="#">Gibson 파츠</a></li>
+                    <li><a href="#">FloydRose 파츠</a></li>
+                    <li><a href="#">REPAIR</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">PIANO·CLASSIC</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">디지털피아노</a></li>
+                    <li><a href="#">키보드/신디사이저</a></li>
+                    <li><a href="#">반주기</a></li>
+                    <li><a href="#">관악기</a></li>
+                    <li><a href="#">현악기</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">DRUM</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">드럼세트/전자드럼</a></li>
+                    <li><a href="#">드럼악세사리</a></li>
+                    <li><a href="#">드럼하드웨어</a></li>
+                    <li><a href="#">심벌</a></li>
+                    <li><a href="#">타악기(젬베/카혼)</a></li>
+                    <li><a href="#">전자드럼앰프</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">RECORDING</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">레코딩패키지</a></li>
+                    <li><a href="#">믹서</a></li>
+                    <li><a href="#">마이크</a></li>
+                    <li><a href="#">모바일</a></li>
+                    <li><a href="#">컨트롤러/DJ장비</a></li>
+                    <li><a href="#">오디오인터페이스</a></li>
+                    <li><a href="#">소프트웨어</a></li>
+                    <li><a href="#">모니터스피커</a></li>
+                    <li><a href="#">레코더</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">ACCESSORIES</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">튜너/메트로놈</a></li>
+                    <li><a href="#">유지관리용품</a></li>
+                    <li><a href="#">케이블</a></li>
+                    <li><a href="#">스트링</a></li>
+                    <li><a href="#">케이스</a></li>
+                    <li><a href="#">스트랩</a></li>
+                    <li><a href="#">피크</a></li>
+                    <li><a href="#">페달보드</a></li>
+                    <li><a href="#">스탠드</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">USED</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">무한특가(중고악기)</a></li>
+                    <li><a href="#">역경매</a></li>
+                    <li><a href="#">0원샵</a></li>
+                    <li><a href="#">기획상품</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">ETC.</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">신규등록상품</a></li>
+                    <li><a href="#">기획상품</a></li>
+                    <li><a href="#">재입고</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- common menu -->
+            <li><a class="common-menu" href="#">New Arrival</a></li>
+            <li><a class="common-menu" href="#">Best</a></li>
+            <li><a class="common-menu" href="#">Smart Shop</a></li>
+            <li><a class="common-menu" href="#">Promotion</a></li>
+            <li><a class="common-menu" href="#">FaQ</a></li>
+          </ul>
+          <!-- search -->
+          <div class="search-area">
+            <input type="text" placeholder="찾으시는 상품을 검색해보세요." />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+      <div class="inner">
+        <form class="join">
+          <h1>회원가입</h1>
+          <input type="text" placeholder="사용하실 아이디를 입력해주세요." />
+          <input
+            type="password"
+            placeholder="영문 대소문자+숫자+특수문자 8~16자리(괄호 사용불가)"
+            minlength="8"
+            maxlength="16"
+          />
+          <input type="password" placeholder="패스워드를 다시 입력해 주세요." />
+          <input type="text" placeholder="이름을 입력해 주세요." />
+          <input
+            type="text"
+            placeholder="휴대폰 번호 '-'표 없이 입력해 주세요."
+            minlength="8"
+            maxlength="16"
+          />
+          <input type="text" placeholder="생년월일 예)19900101" />
+          <div class="sex">
+            <input type="radio" name="sex" value="man" id="man" />
+            <label for="man"
+              ><img src="./img/check_icon.png" alt="check" />남성</label
+            >
+            <input type="radio" name="sex" value="woman" id="woman" />
+            <label for="woman"
+              ><img src="./img/check_icon.png" alt="check" />여성</label
+            >
+          </div>
+
+          <div class="terms">
+            <div class="terms-title">
+              <h2>이용약관</h2>
+              <a href="#">전문보기</a>
+            </div>
+            <div class="scroll-box">
+              <h3>스쿨뮤직 이용약관</h3>
+              <br />
+              <h4>제1조 (목적)</h4>
+              <p>
+                본 회원약관은 스쿨뮤직(이하 '갑'라 한다)이 운영하는 인터넷관련
+                서비스(이하 '서비스'라 한다)를 이용함에 있어 관리자와
+                이용자(이하 '회원'라 한다)의 권리, 의무 및 책임사항을 규정함을
+                목적으로 한다.
+              </p>
+              <br />
+              <h4>제2조 (약관의 효력)</h4>
+              <p>
+                1.본 약관은 '갑'에 회원 가입 시 회원들에게 통지함으로써 효력을
+                발생합니다.<br />
+                2.'갑'은 이 약관의 내용을 변경할 수 있으며, 변경된 약관은
+                제1항과 같은 방법으로 공지 또는 통지함으로써 효력을
+                발생합니다.<br />
+                3.약관의 변경사항 및 내용은 '갑'의 홈페이지에 게시하는 방법으로
+                공시합니다.
+              </p>
+              <br />
+              <h4>제3조 (약관 이외의 준칙)</h4>
+              <p>
+                이 약관에 명시되지 않은 사항이 전기 통신 기본법, 전기통신
+                사업법, 기타 관련 법령에 규정되어 있는 경우 그 규정에 따릅니다.
+              </p>
+              <br />
+              <h4>제4조 (이용계약의 체결)</h4>
+              <p>
+                회원 가입 시 회원 약관 밑에 있는 동의버튼을 누르면 약관에
+                동의하여 이 계약이 체결된 것으로 간주한다.
+              </p>
+              <br />
+              <h4>제5조 (용어의 정의)</h4>
+              <p>
+                이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br />
+                1.회원: '갑'과 서비스 이용에 관한 계약을 체결한 자<br />
+                2.아이디(ID): 회원 식별과 회원의 서비스 이용을 위하여 회원이
+                선정하고 '갑'이 승인하는 문자와 숫자의 조합<br />
+                3.비밀번호: 회원이 통신상의 자신의 비밀을 보호하기 위해 선정한
+                문자와 숫자의 조합
+              </p>
+              <br />
+              <h4>제6조 (이용신청)</h4>
+              <p>
+                1.회원 가입은 온라인으로 가입신청 양식에 기록하여 '갑'에
+                제출함으로써 이용신청을 할 수 있습니다. 2.가입희망 회원은 반드시
+                자신의 본명 및 주민등록번호로 이용신청을 하여야 하며, 1개의 ID만
+                신청을 할 수 있습니다.
+              </p>
+            </div>
+            <div class="agree">
+              <input type="checkbox" />
+              <span>[필수] 약관에 동의 합니다.</span>
+            </div>
+          </div>
+
+          <div class="personal-info">
+            <h2>개인정보 수집 이용동의</h2>
+            <table>
+              <colgroup>
+                <col style="width: 15%" />
+                <col style="width: 30%" />
+                <col style="width: 30%" />
+                <col style="width: 25%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>일시</th>
+                  <th>수집항목</th>
+                  <th>수집목적</th>
+                  <th>보유기간</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>가입시</td>
+                  <td>
+                    아이디, 이메일, 비밀번호, 이름, 휴대폰번호, 성별, 생년월일
+                  </td>
+                  <td>회원식별 및 연락</td>
+                  <td>
+                    회원탈퇴시까지(탈퇴 후 부정이용방지를 위하여 3개월간 보관 후
+                    파기)
+                  </td>
+                </tr>
+                <tr>
+                  <td>최초 구매시</td>
+                  <td>성별, 생년월일, 휴대폰번호, DI</td>
+                  <td>본인확인</td>
+                  <td>회원탈퇴시까지</td>
+                </tr>
+                <tr>
+                  <td>상품 주문시</td>
+                  <td>수령인 정보(이름, 연락처, 주소), 결제수단 정보</td>
+                  <td>
+                    상품 주문 및 배송 등 구매계약의 이행, 상품구매
+                    관련문의사항과 반품, 환불 등 민원사항의 상담 및 처리
+                  </td>
+                  <td>전자상거래법등 관련 법령에 따른 보관 기간</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="agree">
+              <input type="checkbox" />
+              <span>[필수] 개인정보 수집 이용동의</span>
+            </div>
+          </div>
+
+          <div class="personal-info selction">
+            <h2>선택적 개인정보 수집 이용동의</h2>
+            <table>
+              <colgroup>
+                <col style="width: 15%" />
+                <col style="width: 30%" />
+                <col style="width: 30%" />
+                <col style="width: 25%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>일시</th>
+                  <th>수집항목</th>
+                  <th>수집목적</th>
+                  <th>보유기간</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>가입시</td>
+                  <td>성별(선택), 생년월일(선택)</td>
+                  <td>멤버십 혜택 제공 및 커뮤니케이션 맞춤화</td>
+                  <td>회원탈퇴시까지</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="agree">
+              <input type="checkbox" />
+              <span>[선택] 개인정보 수집 이용동의</span>
+            </div>
+          </div>
+
+          <input
+            type="submit"
+            class="submit-btn"
+            value="회원가입하기"
+            style="font-size: 18px; font-weight: 600"
+          />
+        </form>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <!-- top -->
+      <div class="top">
+        <div class="inner">
+          <dl class="service-center-number">
+            <dt>고객센터</dt>
+            <dd class="telephone-number">1577-1234</dd>
+            <dd><span>평일</span>오전 10시 - 오후 6시</dd>
+            <dd><span>점심</span>오후 1시 - 오후 2시</dd>
+            <dd>토요일/일요일/공휴일 휴무</dd>
+          </dl>
+          <dl>
+            <dt>ABOUT US</dt>
+            <dd><a href="#">회사소개</a></dd>
+            <dd><a href="#">이용약관</a></dd>
+            <dd><a href="#">개인정보처리방침</a></dd>
+            <dd><a href="#">채용정보</a></dd>
+            <dd><a href="#">제휴문의</a></dd>
+          </dl>
+          <dl>
+            <dt>SERVICE CENTER</dt>
+            <dd><a href="#">주문/결제</a></dd>
+            <dd><a href="#">주문배송조회</a></dd>
+            <dd><a href="#">공지사항</a></dd>
+            <dd><a href="#">1:1문의</a></dd>
+            <dd><a href="#">자주묻는 질문</a></dd>
+          </dl>
+          <dl class="sns">
+            <dt>SNS</dt>
+            <dd>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </dd>
+            <dd>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </dd>
+            <dd>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </dd>
+            <dd>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+
+      <!-- bottom -->
+      <div class="bottom">
+        <div class="inner">
+          <div class="company-info">
+            <span>
+              본사: (22315) 인천 중구 신포로27번길 16 프린스빌딩
+              3,4,5,6층(관동3가)
+            </span>
+            <span>
+              구주소 : (22315) 인천 중구 관동3가 5-1 프린스빌딩 3,4,5,6층
+            </span>
+            <span>
+              Tel: 1566-5150| 팩스: 032-232-8001 | E-mail:
+              webmaster@schoolmusic.co.kr
+            </span>
+            <span>
+              상호명:(주)스쿨뮤직 | 사업자 등록번호: 121-81-89714 |
+              통신판매업신고: 제2002-인천중구-0017호
+            </span>
+            <span>
+              대표이사: 안정모 | 개인정보관리책임자: 김동우 |
+              이메일주소무단수집거부
+            </span>
+            <span>
+              분쟁조정 기관표시: 소비자보호원/전자거래분쟁중재위원회
+            </span>
+          </div>
+          <div class="payment-info">
+            <span>스쿨뮤직은 에스크로(구매안전) 서비스를 지원합니다.</span>
+            <span
+              >온라인디지털콘텐츠사업발전법에 의한
+              <a href="#">콘텐츠보호안내 자세히보기</a></span
+            >
+          </div>
+        </div>
+      </div>
+
+      <button class="to-top">
+        <i class="fa-solid fa-angles-up"></i>To Top
+      </button>
+    </footer>
+  </body>
+</html>

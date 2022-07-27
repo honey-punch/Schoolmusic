@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스쿨뮤직 리뉴얼</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- javascript -->
+    <script src="./js/login.js" defer></script>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/9dd32a8b92.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- logo user -->
+      <div class="logo-user">
+        <div class="inner">
+          <a class="logo" href='index.html'><img src="./img/logo.png" alt="logo" /></a>
+          <div class="icon-group">
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- nav -->
+      <nav>
+        <div class="inner">
+          <ul class="menu">
+            <!-- category -->
+            <li class="category">
+              <button class="category-btn open">
+                <i class="fa-solid fa-bars"></i>
+                <span>카테고리</span>
+              </button>
+              <button class="category-btn close">
+                <i class="fa-solid fa-x"></i>
+                <span>카테고리</span>
+              </button>
+              <ul class="category-area">
+                <li class="submenu">
+                  <a class="submenu-title">GUITARS</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">어쿠스틱기타</a></li>
+                    <li><a href="#">일렉기타</a></li>
+                    <li><a href="#">베이스기타</a></li>
+                    <li><a href="#">클래식기타</a></li>
+                    <li><a href="#">우쿨렐레</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">AMPS</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">기타앰프</a></li>
+                    <li><a href="#">베이스앰프</a></li>
+                    <li><a href="#">어쿠스틱앰프</a></li>
+                    <li><a href="#">멀티/미니앰프</a></li>
+                    <li><a href="#">헤드폰/스피커</a></li>
+                    <li><a href="#">P/A장비</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">EFFECTORS</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">보컬이펙터</a></li>
+                    <li><a href="#">기타이펙터</a></li>
+                    <li><a href="#">베이스이펙터</a></li>
+                    <li><a href="#">통기타이펙터</a></li>
+                    <li><a href="#">멀티이펙터</a></li>
+                    <li><a href="#">그 외 이펙터/악세사리</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">PICK-UP·PARTS</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">픽업</a></li>
+                    <li><a href="#">브릿지</a></li>
+                    <li><a href="#">헤드머신</a></li>
+                    <li><a href="#">그 외 파츠</a></li>
+                    <li><a href="#">Gibson 파츠</a></li>
+                    <li><a href="#">FloydRose 파츠</a></li>
+                    <li><a href="#">REPAIR</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">PIANO·CLASSIC</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">디지털피아노</a></li>
+                    <li><a href="#">키보드/신디사이저</a></li>
+                    <li><a href="#">반주기</a></li>
+                    <li><a href="#">관악기</a></li>
+                    <li><a href="#">현악기</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">DRUM</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">드럼세트/전자드럼</a></li>
+                    <li><a href="#">드럼악세사리</a></li>
+                    <li><a href="#">드럼하드웨어</a></li>
+                    <li><a href="#">심벌</a></li>
+                    <li><a href="#">타악기(젬베/카혼)</a></li>
+                    <li><a href="#">전자드럼앰프</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">RECORDING</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">레코딩패키지</a></li>
+                    <li><a href="#">믹서</a></li>
+                    <li><a href="#">마이크</a></li>
+                    <li><a href="#">모바일</a></li>
+                    <li><a href="#">컨트롤러/DJ장비</a></li>
+                    <li><a href="#">오디오인터페이스</a></li>
+                    <li><a href="#">소프트웨어</a></li>
+                    <li><a href="#">모니터스피커</a></li>
+                    <li><a href="#">레코더</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">ACCESSORIES</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">튜너/메트로놈</a></li>
+                    <li><a href="#">유지관리용품</a></li>
+                    <li><a href="#">케이블</a></li>
+                    <li><a href="#">스트링</a></li>
+                    <li><a href="#">케이스</a></li>
+                    <li><a href="#">스트랩</a></li>
+                    <li><a href="#">피크</a></li>
+                    <li><a href="#">페달보드</a></li>
+                    <li><a href="#">스탠드</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">USED</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">무한특가(중고악기)</a></li>
+                    <li><a href="#">역경매</a></li>
+                    <li><a href="#">0원샵</a></li>
+                    <li><a href="#">기획상품</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a class="submenu-title">ETC.</a>
+                  <ul class="submenu-list">
+                    <li><a href="#">신규등록상품</a></li>
+                    <li><a href="#">기획상품</a></li>
+                    <li><a href="#">재입고</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <!-- common menu -->
+            <li><a class="common-menu" href="#">New Arrival</a></li>
+            <li><a class="common-menu" href="#">Best</a></li>
+            <li><a class="common-menu" href="#">Smart Shop</a></li>
+            <li><a class="common-menu" href="#">Promotion</a></li>
+            <li><a class="common-menu" href="#">FaQ</a></li>
+          </ul>
+          <!-- search -->
+          <div class="search-area">
+            <input type="text" placeholder="찾으시는 상품을 검색해보세요." />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+      <div class="inner">
+        <form class="login">
+          <h1>로그인</h1>
+          <input type="text" placeholder="아이디" />
+          <input type="password" placeholder="비밀번호" />
+          <input
+            class="login-btn"
+            type="submit"
+            value="로그인"
+            style="font-size: 18px; font-weight: 600"
+          />
+        </form>
+
+        <div class="login-option">
+          <div class="keep-login">
+            <input type="checkbox" />
+            <span>로그인 유지하기</span>
+          </div>
+          <a class="find-id" href="#">아이디/비밀번호 찾기</a>
+        </div>
+
+        <div class="login-sns">
+          <span>sns로그인</span>
+          <div class="sns_icon">
+            <a href="#" class="naver"><img src="./img/login-sns-icon1.png" alt="naver"></a>
+            <a href="#" class="kakao"><img src="./img/login-sns-icon2.png" alt="kakao"></a>
+            <a href="#" class="facebook"><img src="./img/login-sns-icon3.png" alt="facebook"></a>
+          </div>
+        </div>
+
+        <div class="login-etc">
+          <span>회원이 아니신가요?
+            <a class="join" href="join.html">회원가입</a>
+          </span>
+          <a href="#">비회원 주문 조회</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <!-- top -->
+      <div class="top">
+        <div class="inner">
+          <dl class="service-center-number">
+            <dt>고객센터</dt>
+            <dd class="telephone-number">1577-1234</dd>
+            <dd><span>평일</span>오전 10시 - 오후 6시</dd>
+            <dd><span>점심</span>오후 1시 - 오후 2시</dd>
+            <dd>토요일/일요일/공휴일 휴무</dd>
+          </dl>
+          <dl>
+            <dt>ABOUT US</dt>
+            <dd><a href="#">회사소개</a></dd>
+            <dd><a href="#">이용약관</a></dd>
+            <dd><a href="#">개인정보처리방침</a></dd>
+            <dd><a href="#">채용정보</a></dd>
+            <dd><a href="#">제휴문의</a></dd>
+          </dl>
+          <dl>
+            <dt>SERVICE CENTER</dt>
+            <dd><a href="#">주문/결제</a></dd>
+            <dd><a href="#">주문배송조회</a></dd>
+            <dd><a href="#">공지사항</a></dd>
+            <dd><a href="#">1:1문의</a></dd>
+            <dd><a href="#">자주묻는 질문</a></dd>
+          </dl>
+          <dl class="sns">
+            <dt>SNS</dt>
+            <dd>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </dd>
+            <dd>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </dd>
+            <dd>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </dd>
+            <dd>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+
+      <!-- bottom -->
+      <div class="bottom">
+        <div class="inner">
+          <div class="company-info">
+            <span>
+              본사: (22315) 인천 중구 신포로27번길 16 프린스빌딩
+              3,4,5,6층(관동3가)
+            </span>
+            <span>
+              구주소 : (22315) 인천 중구 관동3가 5-1 프린스빌딩 3,4,5,6층
+            </span>
+            <span>
+              Tel: 1566-5150| 팩스: 032-232-8001 | E-mail:
+              webmaster@schoolmusic.co.kr
+            </span>
+            <span>
+              상호명:(주)스쿨뮤직 | 사업자 등록번호: 121-81-89714 |
+              통신판매업신고: 제2002-인천중구-0017호
+            </span>
+            <span>
+              대표이사: 안정모 | 개인정보관리책임자: 김동우 |
+              이메일주소무단수집거부
+            </span>
+            <span>
+              분쟁조정 기관표시: 소비자보호원/전자거래분쟁중재위원회
+            </span>
+          </div>
+          <div class="payment-info">
+            <span>스쿨뮤직은 에스크로(구매안전) 서비스를 지원합니다.</span>
+            <span
+              >온라인디지털콘텐츠사업발전법에 의한
+              <a href="#">콘텐츠보호안내 자세히보기</a></span
+            >
+          </div>
+        </div>
+      </div>
+
+      <button class="to-top"><i class="fa-solid fa-angles-up"></i>To Top</button>
+    </footer>
+  </body>
+</html>

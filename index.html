@@ -36,11 +36,11 @@
       <!-- logo user -->
       <div class="logo-user">
         <div class="inner">
-          <div class="logo"><img src="./img/logo.png" alt="logo" /></div>
+          <a class="logo" href='index.html'><img src="./img/logo.png" alt="logo" /></a>
           <div class="icon-group">
             <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
             <a href="#"><i class="fa-solid fa-heart"></i></a>
-            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
           </div>
         </div>
       </div>
@@ -51,14 +51,14 @@
           <ul class="menu">
             <!-- category -->
             <li class="category">
-              <a class="category-btn open">
+              <button class="category-btn open">
                 <i class="fa-solid fa-bars"></i>
                 <span>카테고리</span>
-              </a>
-              <a class="category-btn close">
+              </button>
+              <button class="category-btn close">
                 <i class="fa-solid fa-x"></i>
                 <span>카테고리</span>
-              </a>
+              </button>
               <ul class="category-area">
                 <li class="submenu">
                   <a class="submenu-title">GUITARS</a>
@@ -182,560 +182,558 @@
           <!-- search -->
           <div class="search-area">
             <input type="text" placeholder="찾으시는 상품을 검색해보세요." />
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
           </div>
         </div>
       </nav>
     </header>
 
-    <!-- section1 -->
-    <section class="section1">
-      <div class="inner">
-        <h1 hidden>Promotion Banner</h1>
-
-        <ul class="banner-list">
-          <li>
-            <a href="#"><img src="./img/banner1.jpg" alt="banner" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./img/banner2.jpg" alt="banner" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./img/banner3.jpg" alt="banner" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./img/banner4.jpg" alt="banner" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./img/banner5.jpg" alt="banner" /></a>
-          </li>
-        </ul>
-        <div class="slider-btn">
-          <button class="left">
-            <i class="fa-solid fa-angle-left"></i>
-          </button>
-          <button class="right">
-            <i class="fa-solid fa-angle-right"></i>
-          </button>
-        </div>
-        <ul class="pagination"></ul>
-      </div>
-    </section>
-
-    <!-- section2 -->
-    <section class="section2 section-common">
-      <div class="inner">
-        <h1>New Arrival</h1>
-
-        <ul class="new-arrival">
-          <li>
-            <a href="#">
-              <img src="./img/new-arrival1.jpg" alt="item" />
-              <div class="description">
-                <span class="item-name"
-                  >Taylor 312e Grand Concert / 테일러 그랜드콘서트
-                  ES-N픽업</span
-                >
-                <div class="item-price">
-                  <span class="percent">10%</span>
-                  <div class="price">
-                    <span class="original-price">3,800,000원</span>
-                    <span class="discount-price">3,420,000원</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./img/new-arrival2.jpg" alt="item" />
-              <div class="description">
-                <span class="item-name"
-                  >Boss - Waza Air / 보스 퍼스널 헤드폰앰프 시스템</span
-                >
-                <div class="item-price">
-                  <span class="percent">20%</span>
-                  <div class="price">
-                    <span class="original-price">749,000원</span>
-                    <span class="discount-price">599,000원</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./img/new-arrival3.jpg" alt="item" />
-              <div class="description">
-                <span class="item-name"
-                  >Fender - Frontman 20G / 펜더 프론트맨 일렉기타 앰프</span
-                >
-                <div class="item-price">
-                  <span class="percent">20%</span>
-                  <div class="price">
-                    <span class="original-price">260,000원</span>
-                    <span class="discount-price">208,000원</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./img/new-arrival4.jpg" alt="item" />
-              <div class="description">
-                <span class="item-name"
-                  >Epiphone ES-339 - Vintage Red / 에피폰 세미할로바디</span
-                >
-                <div class="item-price">
-                  <span class="percent">20%</span>
-                  <div class="price">
-                    <span class="original-price">749,000원</span>
-                    <span class="discount-price">599,000원</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <a href="#" class="more-btn">더 보러가기</a>
-      </div>
-    </section>
-
-    <!-- section3 -->
-    <section class="section3 section-common">
-      <div class="inner">
-        <h1>Best Seller</h1>
-        <div class="tabmenu-ranking">
-          <ul class="tabmenu">
+    <!-- main -->
+    <main>
+      <!-- section1 -->
+      <section class="section1">
+        <div class="inner">
+          <h1 hidden>Promotion Banner</h1>
+          <ul class="banner-list">
             <li>
-              <a href="#" class="tab-title">기타</a>
-              <ul class="tab-list">
-                <li>
-                  <a href="#">
-                    <img src="./img/guitar1.jpg" alt="item" />
-                    <div class="description">
-                      <span class="item-name"
-                        >Crafter HG-250C / 크래프터 통기타</span
-                      >
-                      <div class="item-price">
-                        <span class="percent">20%</span>
-                        <div class="price">
-                          <span class="original-price">285,000원</span>
-                          <span class="discount-price">228,000원</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./img/guitar2.jpg" alt="item" />
-                    <div class="description">
-                      <span class="item-name"
-                        >Epiphone Les Paul Studio E1 / 에피폰 레스폴
-                        스튜디오</span
-                      >
-                      <div class="item-price">
-                        <span class="percent">10%</span>
-                        <div class="price">
-                          <span class="original-price">400,000원</span>
-                          <span class="discount-price">360,000원</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./img/guitar3.jpg" alt="item" />
-                    <div class="description">
-                      <span class="item-name"
-                        >Jackson - JS Series Dinky Arch Top / 잭슨
-                        일렉기타</span
-                      >
-                      <div class="item-price">
-                        <span class="percent">21%</span>
-                        <div class="price">
-                          <span class="original-price">738,000원</span>
-                          <span class="discount-price">590,000원</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./img/guitar4.jpg" alt="item" />
-                    <div class="description">
-                      <span class="item-name"
-                        >Yamaha - LL6 ARE / 야마하 통기타</span
-                      >
-                      <div class="item-price">
-                        <span class="percent">20%</span>
-                        <div class="price">
-                          <span class="original-price">1,120,000원</span>
-                          <span class="discount-price">900,000원</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+              <a href="#"><img src="./img/banner1.jpg" alt="banner" /></a>
             </li>
             <li>
-              <a href="#" class="tab-title">앰프</a>
-              <ul class="tab-list">
-                <li>
-                  <a href="#">
-                    <img src="./img/amp1.jpg" alt="item" />
-                    <div class="description">
-                      <span class="item-name"
-                        >Marshall - CODE 100 헤드+캐비넷 세트 / 풋스위치
-                        포함</span
-                      >
-                      <div class="item-price">
-                        <span class="percent">22%</span>
-                        <div class="price">
-                          <span class="original-price">988,000원</span>
-                          <span class="discount-price">779,000원</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./img/amp2.jpg" alt="item" />
-                    <div class="description">
-                      <span class="item-name"
-                        >Marshall 휴대용 기타 미니앰프 MS-2C Classic</span
-                      >
-                      <div class="item-price">
-                        <span class="percent">21%</span>
-                        <div class="price">
-                          <span class="original-price">88,000원</span>
-                          <span class="discount-price">70,000원</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./img/amp3.jpg" alt="item" />
-                    <div class="description">
-                      <span class="item-name"
-                        >Fender - Frontman 20G / 펜더 프론트맨 일렉기타
-                        앰프</span
-                      >
-                      <div class="item-price">
-                        <span class="percent">21%</span>
-                        <div class="price">
-                          <span class="original-price">260,000원</span>
-                          <span class="discount-price">207,970원</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./img/amp4.jpg" alt="item" />
-                    <div class="description">
-                      <span class="item-name"
-                        >Vox - Pathfinder 10 / 한정판 기타 앰프 (Cream
-                        Brown)</span
-                      >
-                      <div class="item-price">
-                        <span class="percent">20%</span>
-                        <div class="price">
-                          <span class="original-price">200,000원</span>
-                          <span class="discount-price">160,000원</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+              <a href="#"><img src="./img/banner2.jpg" alt="banner" /></a>
             </li>
             <li>
-              <a href="#" class="tab-title">악세사리</a>
-              <ul class="tab-list">
-                <li>
-                  <a href="#">
-                    <img src="./img/accessory1.jpg" alt="item" />
-                    <div class="description">
-                      <span class="item-name"
-                        >Ibanez Effector TS9 / 아이바네즈 튜브 스크리머</span
-                      >
-                      <div class="item-price">
-                        <span class="percent">27%</span>
-                        <div class="price">
-                          <span class="original-price">275,000원</span>
-                          <span class="discount-price">202,400원</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./img/accessory2.jpg" alt="item" />
-                    <div class="description">
-                      <span class="item-name"
-                        >Boss Effector Pakage Sale / 보스 이펙터 패키지
-                        할인</span
-                      >
-                      <div class="item-price">
-                        <span class="percent">20%</span>
-                        <div class="price">
-                          <span class="original-price">980,000원</span>
-                          <span class="discount-price">785,000원</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./img/accessory3.jpg" alt="item" />
-                    <div class="description">
-                      <span class="item-name"
-                        >Arion - Stephy Junior XLR Cable / 기타 베이스 케이블
-                        5m</span
-                      >
-                      <div class="item-price">
-                        <span class="percent">20%</span>
-                        <div class="price">
-                          <span class="original-price">40,000원</span>
-                          <span class="discount-price">32,000원</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./img/accessory4.jpg" alt="item" />
-                    <div class="description">
-                      <span class="item-name"
-                        >Bose Effector 1+1 Sale / 보스 이펙터 1+1 할인</span
-                      >
-                      <div class="item-price">
-                        <span class="percent">20%</span>
-                        <div class="price">
-                          <span class="original-price">550,000원</span>
-                          <span class="discount-price">440,000원</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+              <a href="#"><img src="./img/banner3.jpg" alt="banner" /></a>
             </li>
             <li>
-              <a href="#" class="tab-title">피아노</a>
-              <ul class="tab-list">
-                <li>
-                  <a href="#">
-                    <img src="./img/piano1.jpg" alt="item" />
-                    <div class="description">
-                      <span class="item-name"
-                        >Kurzweil SP7 Grand 스테이지 피아노 & 신디사이저</span
-                      >
-                      <div class="item-price">
-                        <span class="percent">20%</span>
-                        <div class="price">
-                          <span class="original-price">2,500,000원</span>
-                          <span class="discount-price">2,000,000원</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./img/piano2.jpg" alt="item" />
-                    <div class="description">
-                      <span class="item-name"
-                        >M-Audio - Oxygen Pro Mini / USB 미디 키보드
-                        컨트롤러</span
-                      >
-                      <div class="item-price">
-                        <span class="percent">12%</span>
-                        <div class="price">
-                          <span class="original-price">168,000원</span>
-                          <span class="discount-price">148,000원</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./img/piano3.jpg" alt="item" />
-                    <div class="description">
-                      <span class="item-name"
-                        >Casio 카시오 CT-S1 키보드 (White)</span
-                      >
-                      <div class="item-price">
-                        <span class="percent">24%</span>
-                        <div class="price">
-                          <span class="original-price">456,000원</span>
-                          <span class="discount-price">350,000원</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./img/piano4.jpg" alt="item" />
-                    <div class="description">
-                      <span class="item-name"
-                        >KORG minilogue 폴리포닉 아날로그 신디사이저</span
-                      >
-                      <div class="item-price">
-                        <span class="percent">26%</span>
-                        <div class="price">
-                          <span class="original-price">975,000원</span>
-                          <span class="discount-price">729,810원</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+              <a href="#"><img src="./img/banner4.jpg" alt="banner" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/banner5.jpg" alt="banner" /></a>
             </li>
           </ul>
-          <div class="rangking">
-            <h2>Brand Rangking</h2>
-            <ul class="brand-ranking">
+          <div class="slider-btn">
+            <button class="left">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button class="right">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+          <ul class="pagination"></ul>
+        </div>
+      </section>
+      <!-- section2 -->
+      <section class="section2 section-common">
+        <div class="inner">
+          <h1>New Arrival</h1>
+          <ul class="new-arrival">
+            <li>
+              <a href="#">
+                <img src="./img/new-arrival1.jpg" alt="item" />
+                <div class="description">
+                  <span class="item-name"
+                    >Taylor 312e Grand Concert / 테일러 그랜드콘서트
+                    ES-N픽업</span
+                  >
+                  <div class="item-price">
+                    <span class="percent">10%</span>
+                    <div class="price">
+                      <span class="original-price">3,800,000원</span>
+                      <span class="discount-price">3,420,000원</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./img/new-arrival2.jpg" alt="item" />
+                <div class="description">
+                  <span class="item-name"
+                    >Boss - Waza Air / 보스 퍼스널 헤드폰앰프 시스템</span
+                  >
+                  <div class="item-price">
+                    <span class="percent">20%</span>
+                    <div class="price">
+                      <span class="original-price">749,000원</span>
+                      <span class="discount-price">599,000원</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./img/new-arrival3.jpg" alt="item" />
+                <div class="description">
+                  <span class="item-name"
+                    >Fender - Frontman 20G / 펜더 프론트맨 일렉기타 앰프</span
+                  >
+                  <div class="item-price">
+                    <span class="percent">20%</span>
+                    <div class="price">
+                      <span class="original-price">260,000원</span>
+                      <span class="discount-price">208,000원</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./img/new-arrival4.jpg" alt="item" />
+                <div class="description">
+                  <span class="item-name"
+                    >Epiphone ES-339 - Vintage Red / 에피폰 세미할로바디</span
+                  >
+                  <div class="item-price">
+                    <span class="percent">20%</span>
+                    <div class="price">
+                      <span class="original-price">749,000원</span>
+                      <span class="discount-price">599,000원</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="more-btn">더 보러가기</a>
+        </div>
+      </section>
+      <!-- section3 -->
+      <section class="section3 section-common">
+        <div class="inner">
+          <h1>Best Seller</h1>
+          <div class="tabmenu-ranking">
+            <ul class="tabmenu">
               <li>
-                <a href="#">
-                  <span>1. 마틴(Martin)</span
-                  ><i class="fa-solid fa-angle-right"></i>
-                </a>
+                <button href="#" class="tab-title">기타</button>
+                <ul class="tab-list">
+                  <li>
+                    <a href="#">
+                      <img src="./img/guitar1.jpg" alt="item" />
+                      <div class="description">
+                        <span class="item-name"
+                          >Crafter HG-250C / 크래프터 통기타</span
+                        >
+                        <div class="item-price">
+                          <span class="percent">20%</span>
+                          <div class="price">
+                            <span class="original-price">285,000원</span>
+                            <span class="discount-price">228,000원</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/guitar2.jpg" alt="item" />
+                      <div class="description">
+                        <span class="item-name"
+                          >Epiphone Les Paul Studio E1 / 에피폰 레스폴
+                          스튜디오</span
+                        >
+                        <div class="item-price">
+                          <span class="percent">10%</span>
+                          <div class="price">
+                            <span class="original-price">400,000원</span>
+                            <span class="discount-price">360,000원</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/guitar3.jpg" alt="item" />
+                      <div class="description">
+                        <span class="item-name"
+                          >Jackson - JS Series Dinky Arch Top / 잭슨
+                          일렉기타</span
+                        >
+                        <div class="item-price">
+                          <span class="percent">21%</span>
+                          <div class="price">
+                            <span class="original-price">738,000원</span>
+                            <span class="discount-price">590,000원</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/guitar4.jpg" alt="item" />
+                      <div class="description">
+                        <span class="item-name"
+                          >Yamaha - LL6 ARE / 야마하 통기타</span
+                        >
+                        <div class="item-price">
+                          <span class="percent">20%</span>
+                          <div class="price">
+                            <span class="original-price">1,120,000원</span>
+                            <span class="discount-price">900,000원</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li>
-                <a href="#">
-                  <span>2. 테일러(Taylor)</span>
-                  <i class="fa-solid fa-angle-right"></i>
-                </a>
+                <button href="#" class="tab-title">앰프</button>
+                <ul class="tab-list">
+                  <li>
+                    <a href="#">
+                      <img src="./img/amp1.jpg" alt="item" />
+                      <div class="description">
+                        <span class="item-name"
+                          >Marshall - CODE 100 헤드+캐비넷 세트 / 풋스위치
+                          포함</span
+                        >
+                        <div class="item-price">
+                          <span class="percent">22%</span>
+                          <div class="price">
+                            <span class="original-price">988,000원</span>
+                            <span class="discount-price">779,000원</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/amp2.jpg" alt="item" />
+                      <div class="description">
+                        <span class="item-name"
+                          >Marshall 휴대용 기타 미니앰프 MS-2C Classic</span
+                        >
+                        <div class="item-price">
+                          <span class="percent">21%</span>
+                          <div class="price">
+                            <span class="original-price">88,000원</span>
+                            <span class="discount-price">70,000원</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/amp3.jpg" alt="item" />
+                      <div class="description">
+                        <span class="item-name"
+                          >Fender - Frontman 20G / 펜더 프론트맨 일렉기타
+                          앰프</span
+                        >
+                        <div class="item-price">
+                          <span class="percent">21%</span>
+                          <div class="price">
+                            <span class="original-price">260,000원</span>
+                            <span class="discount-price">207,970원</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/amp4.jpg" alt="item" />
+                      <div class="description">
+                        <span class="item-name"
+                          >Vox - Pathfinder 10 / 한정판 기타 앰프 (Cream
+                          Brown)</span
+                        >
+                        <div class="item-price">
+                          <span class="percent">20%</span>
+                          <div class="price">
+                            <span class="original-price">200,000원</span>
+                            <span class="discount-price">160,000원</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li>
-                <a href="#">
-                  <span>3. 펜더(Fender)</span>
-                  <i class="fa-solid fa-angle-right"></i>
-                </a>
+                <button href="#" class="tab-title">악세사리</button>
+                <ul class="tab-list">
+                  <li>
+                    <a href="#">
+                      <img src="./img/accessory1.jpg" alt="item" />
+                      <div class="description">
+                        <span class="item-name"
+                          >Ibanez Effector TS9 / 아이바네즈 튜브 스크리머</span
+                        >
+                        <div class="item-price">
+                          <span class="percent">27%</span>
+                          <div class="price">
+                            <span class="original-price">275,000원</span>
+                            <span class="discount-price">202,400원</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/accessory2.jpg" alt="item" />
+                      <div class="description">
+                        <span class="item-name"
+                          >Boss Effector Pakage Sale / 보스 이펙터 패키지
+                          할인</span
+                        >
+                        <div class="item-price">
+                          <span class="percent">20%</span>
+                          <div class="price">
+                            <span class="original-price">980,000원</span>
+                            <span class="discount-price">785,000원</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/accessory3.jpg" alt="item" />
+                      <div class="description">
+                        <span class="item-name"
+                          >Arion - Stephy Junior XLR Cable / 기타 베이스 케이블
+                          5m</span
+                        >
+                        <div class="item-price">
+                          <span class="percent">20%</span>
+                          <div class="price">
+                            <span class="original-price">40,000원</span>
+                            <span class="discount-price">32,000원</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/accessory4.jpg" alt="item" />
+                      <div class="description">
+                        <span class="item-name"
+                          >Bose Effector 1+1 Sale / 보스 이펙터 1+1 할인</span
+                        >
+                        <div class="item-price">
+                          <span class="percent">20%</span>
+                          <div class="price">
+                            <span class="original-price">550,000원</span>
+                            <span class="discount-price">440,000원</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li>
-                <a href="#">
-                  <span>4. 깁슨(Gibson)</span>
-                  <i class="fa-solid fa-angle-right"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>5. 그레치(Gretch)</span>
-                  <i class="fa-solid fa-angle-right"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>6. 야마하(Yamaha)</span>
-                  <i class="fa-solid fa-angle-right"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>7. 커즈와일(Kurzweil)</span>
-                  <i class="fa-solid fa-angle-right"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>8. 크래프터(Crafter)</span>
-                  <i class="fa-solid fa-angle-right"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>9. 에피폰(Epiphone)</span>
-                  <i class="fa-solid fa-angle-right"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>10. 콜트(Cort)</span>
-                  <i class="fa-solid fa-angle-right"></i>
-                </a>
+                <button href="#" class="tab-title">피아노</button>
+                <ul class="tab-list">
+                  <li>
+                    <a href="#">
+                      <img src="./img/piano1.jpg" alt="item" />
+                      <div class="description">
+                        <span class="item-name"
+                          >Kurzweil SP7 Grand 스테이지 피아노 & 신디사이저</span
+                        >
+                        <div class="item-price">
+                          <span class="percent">20%</span>
+                          <div class="price">
+                            <span class="original-price">2,500,000원</span>
+                            <span class="discount-price">2,000,000원</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/piano2.jpg" alt="item" />
+                      <div class="description">
+                        <span class="item-name"
+                          >M-Audio - Oxygen Pro Mini / USB 미디 키보드
+                          컨트롤러</span
+                        >
+                        <div class="item-price">
+                          <span class="percent">12%</span>
+                          <div class="price">
+                            <span class="original-price">168,000원</span>
+                            <span class="discount-price">148,000원</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/piano3.jpg" alt="item" />
+                      <div class="description">
+                        <span class="item-name"
+                          >Casio 카시오 CT-S1 키보드 (White)</span
+                        >
+                        <div class="item-price">
+                          <span class="percent">24%</span>
+                          <div class="price">
+                            <span class="original-price">456,000원</span>
+                            <span class="discount-price">350,000원</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./img/piano4.jpg" alt="item" />
+                      <div class="description">
+                        <span class="item-name"
+                          >KORG minilogue 폴리포닉 아날로그 신디사이저</span
+                        >
+                        <div class="item-price">
+                          <span class="percent">26%</span>
+                          <div class="price">
+                            <span class="original-price">975,000원</span>
+                            <span class="discount-price">729,810원</span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
+            <div class="rangking">
+              <h2>Brand Rangking</h2>
+              <ul class="brand-ranking">
+                <li>
+                  <a href="#">
+                    <span>1. 마틴(Martin)</span
+                    ><i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>2. 테일러(Taylor)</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>3. 펜더(Fender)</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>4. 깁슨(Gibson)</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>5. 그레치(Gretch)</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>6. 야마하(Yamaha)</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>7. 커즈와일(Kurzweil)</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>8. 크래프터(Crafter)</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>9. 에피폰(Epiphone)</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>10. 콜트(Cort)</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
+          <a href="#" class="more-btn">더 보러가기</a>
         </div>
-        <a href="#" class="more-btn">더 보러가기</a>
-      </div>
-    </section>
-
-    <!-- section4 -->
-    <section class="section4 section-common">
-      <div class="inner">
-        <h1>School Music<i class="fa-brands fa-youtube"></i></h1>
-        <div class="youtube">
-          <iframe
-            width="400"
-            height="225"
-            src="https://www.youtube.com/embed/l_PIA7qSVsk"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            width="400"
-            height="225"
-            src="https://www.youtube.com/embed/gxHImrrNXaI"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            width="400"
-            height="225"
-            src="https://www.youtube.com/embed/98KQdFDNiBY"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            width="400"
-            height="225"
-            src="https://www.youtube.com/embed/vyyxG2OMdGo"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            width="400"
-            height="225"
-            src="https://www.youtube.com/embed/WnHg3n5km5c"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            width="400"
-            height="225"
-            src="https://www.youtube.com/embed/fFf4--m3wr8"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+      </section>
+      <!-- section4 -->
+      <section class="section4 section-common">
+        <div class="inner">
+          <h1>School Music<i class="fa-brands fa-youtube"></i></h1>
+          <div class="youtube">
+            <iframe
+              width="400"
+              height="225"
+              src="https://www.youtube.com/embed/l_PIA7qSVsk"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="400"
+              height="225"
+              src="https://www.youtube.com/embed/gxHImrrNXaI"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="400"
+              height="225"
+              src="https://www.youtube.com/embed/98KQdFDNiBY"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="400"
+              height="225"
+              src="https://www.youtube.com/embed/vyyxG2OMdGo"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="400"
+              height="225"
+              src="https://www.youtube.com/embed/WnHg3n5km5c"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="400"
+              height="225"
+              src="https://www.youtube.com/embed/fFf4--m3wr8"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <a href="#" class="more-btn">유튜브 바로가기</a>
         </div>
-        <a href="#" class="more-btn">유튜브 바로가기</a>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- footer -->
     <footer>
@@ -820,7 +818,7 @@
         </div>
       </div>
 
-      <a class="to-top"><i class="fa-solid fa-angles-up"></i>To Top</a>
+      <button class="to-top"><i class="fa-solid fa-angles-up"></i>To Top</button>
     </footer>
   </body>
 </html>

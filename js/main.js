@@ -1,3 +1,4 @@
+// header
 // category menu
 const categoryBtnOpen = document.querySelector('.category-btn.open');
 const categoryBtnClose = document.querySelector('.category-btn.close');
@@ -5,18 +6,32 @@ const categoryArea = document.querySelector('.category-area');
 const category = document.querySelector('.category');
 
 categoryBtnOpen.addEventListener('click', () => {
-    categoryArea.classList.add('grid');
-    categoryBtnOpen.style.display = 'none';
-    categoryBtnClose.style.display = 'inline';
-    category.style.background = 'var(--dark-grey-color)';
+  categoryArea.classList.add('grid');
+  categoryBtnOpen.style.display = 'none';
+  categoryBtnClose.style.display = 'inline';
+  category.style.background = 'var(--dark-grey-color)';
 })
-categoryBtnClose.addEventListener('click', () => {
-    categoryArea.classList.remove('grid');
-    categoryBtnOpen.style.display = 'inline';
-    categoryBtnClose.style.display = 'none';
-    category.style.background = 'var(--main-color)';
+categoryBtnOpen.addEventListener('mouseover', () => {
+  categoryBtnOpen.style.background = 'var(--dark-grey-color)';
+})
+categoryBtnOpen.addEventListener('mouseout', () => {
+  categoryBtnOpen.style.background = 'var(--main-color)';
 })
 
+categoryBtnClose.addEventListener('click', () => {
+  categoryArea.classList.remove('grid');
+  categoryBtnOpen.style.display = 'inline';
+  categoryBtnClose.style.display = 'none';
+  category.style.background = 'var(--main-color)';
+})
+categoryBtnClose.addEventListener('mouseover', () => {
+  categoryBtnClose.style.background = 'var(--main-color)';
+})
+categoryBtnClose.addEventListener('mouseout', () => {
+  categoryBtnClose.style.background = 'var(--dark-grey-color)';
+})
+
+// section1
 // slider
 const slide = document.querySelector(".banner-list");
 let slideWidth = slide.clientWidth;
@@ -175,6 +190,7 @@ let loopInterval = setInterval(() => {
     }, 3000);
   });
 
+// section3
 // tab frist tab-title color
 document.querySelector(".tabmenu li:first-child .tab-title").classList.add('fill-main-color');
 
@@ -199,6 +215,7 @@ for (let i = 0; i < tabTitleList.length; i++) {
     })
 };
 
+// footer
 // to top
 const toTopBtn = document.querySelector('.to-top');
 toTopBtn.addEventListener('click',function(){
