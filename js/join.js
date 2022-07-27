@@ -31,6 +31,14 @@ categoryBtnClose.addEventListener('mouseout', () => {
   categoryBtnClose.style.background = 'var(--dark-grey-color)';
 })
 
+// main
+// validation
+const validation = document.querySelector('.validation');
+
+if (password.value > 8) {
+  validation.classList.add('inline');
+}
+
 // footer
 // to top
 const toTopBtn = document.querySelector('.to-top');

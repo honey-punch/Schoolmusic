@@ -259,6 +259,12 @@ main .inner .join input[type=submit] {
 main .inner .join input:focus {
     border: 1px solid var(--grey-color);
 }
+main .inner .join .validation {
+    display: none;
+}
+main .inner .join .validation.inline {
+    display: inline;
+}
 main .inner .join .agree {
     display: flex;
     align-items: center;

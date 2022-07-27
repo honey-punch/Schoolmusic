@@ -193,15 +193,17 @@
     <!-- main -->
     <main>
       <div class="inner">
-        <form class="join">
+        <form class="join" name="join">
           <h1>회원가입</h1>
           <input type="text" placeholder="사용하실 아이디를 입력해주세요." />
           <input
             type="password"
+            name="password"
             placeholder="영문 대소문자+숫자+특수문자 8~16자리(괄호 사용불가)"
             minlength="8"
             maxlength="16"
           />
+          <span class="validation">이것은 경고 문구</span>
           <input type="password" placeholder="패스워드를 다시 입력해 주세요." />
           <input type="text" placeholder="이름을 입력해 주세요." />
           <input
