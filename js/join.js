@@ -35,12 +35,7 @@ categoryBtnClose.addEventListener('mouseout', () => {
 // validation
 const validation = document.querySelector('.validation');
 
-join.password.addEventListener('focus', () => {
-  validation.classList.add('inline');
-})
-join.password.addEventListener('blur', () => {
-  validation.classList.remove('inline');
-})
+
 
 // footer
 // to top

@@ -298,14 +298,17 @@ main .inner .join input[type=radio]:checked+label {
     background: var(--dark-grey-color);
     color: var(--white-color);
 }
+main .inner .join input[type=radio]:checked+label i {
+    display: block;
+}
 main .inner .join .sex label {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-main .inner .join .sex img {
+main .inner .join .sex label i {
     display: none;
-    width: 15px;
+    font-size: var(--font-large);
     margin-right: 5px;
 }
 
