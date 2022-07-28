@@ -245,8 +245,7 @@ main .inner .join h2 {
     font-size: var(--font-large);
 }
 main .inner .join input[type=text],
-main .inner .join input[type=password],
-main .inner .join input[type=submit] {
+main .inner .join input[type=password] {
     width: 100%;
     height: 50px;
     padding: 10px;
@@ -254,16 +253,26 @@ main .inner .join input[type=submit] {
     display: block;
     border: 1px solid var(--light-grey-color);
     font-size: var(--font-large);
-    margin-bottom: 20px;
+    margin-top: 20px;
+    display: block;
+}
+main .inner .join input[type=text]::placeholder,
+main .inner .join input[type=password]::placeholder {
+    font-size: var(--font-small);
 }
 main .inner .join input:focus {
     border: 1px solid var(--grey-color);
 }
-main .inner .join .validation {
+main .inner .join .guide {
     display: none;
 }
-main .inner .join .validation.inline {
-    display: inline;
+main .inner .join .guide.flex {
+    display: block;
+    text-align: left;
+    font-size: var(--font-small);
+    line-height: var(--font-medium);
+    color: var(--main-color);
+    margin-top: 6px;
 }
 main .inner .join .agree {
     display: flex;
@@ -281,6 +290,7 @@ main .inner .join .agree span {
 main .inner .join .sex {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
     margin-bottom: 100px;
 }
 main .inner .join input[type=radio] {
@@ -290,7 +300,7 @@ main .inner .join input[type=radio]+label {
     cursor: pointer;
     width: 48%;
     height: 50px;
-    border: 1px solid #cccccc;
+    border: 1px solid var(--light-grey-color);
     line-height: 50px;
     text-align: center;
 }
@@ -327,7 +337,7 @@ main .inner .join .terms .scroll-box {
     width: 100%;
     height: 200px;
     overflow: scroll;
-    border: 1px solid #cccccc;
+    border: 1px solid var(--light-grey-color);
     font-size: var(--font-small);
     line-height: 15px;
     padding: 7px;
@@ -348,7 +358,7 @@ main .inner .join .personal-info h2 {
 }
 main .inner .join .personal-info table {
     font-size: var(--font-small);
-    border: 1px solid #cccccc;
+    border: 1px solid var(--light-grey-color);
     box-sizing: border-box;
 }
 main .inner .join .personal-info table th,
@@ -356,7 +366,7 @@ main .inner .join .personal-info table td {
     vertical-align: middle;
     text-align: center;
     padding: 8px;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid var(--light-grey-color);
     box-sizing: border-box;
 }
 main .inner .join .personal-info table thead th {
@@ -378,19 +388,18 @@ main .inner .join .personal-info table tbody tr td:last-child {
 
 
 main .inner .submit-btn {
-    background: #333333;
-    color: #ffffff;
+    background: var(--dark-grey-color);
+    color: var(--white-color);
     text-align: center;
     cursor: pointer;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    font-size: var(--font-large);
 }
 main .inner .submit-btn:hover {
-    background-color: #606060;
-}
-main .inner .submit-btn a {
-    color: #ffffff;
-    line-height: 50px;
-    font-weight: 600;
-    font-size: 16px;
+    background-color: var(--grey-color)
 }
 
 /* footer */

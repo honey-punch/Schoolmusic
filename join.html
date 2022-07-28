@@ -193,26 +193,59 @@
     <!-- main -->
     <main>
       <div class="inner">
-        <form class="join" name="join">
+        <button class="join" name="join">
           <h1>회원가입</h1>
-          <input type="text" placeholder="사용하실 아이디를 입력해주세요." />
-          <input
-            type="password"
-            name="password"
-            placeholder="영문 대소문자+숫자+특수문자 8~16자리(괄호 사용불가)"
-            minlength="8"
-            maxlength="16"
-          />
-          <span class="validation">이것은 경고 문구</span>
-          <input type="password" placeholder="패스워드를 다시 입력해 주세요." />
-          <input type="text" placeholder="이름을 입력해 주세요." />
           <input
             type="text"
-            placeholder="휴대폰 번호 '-'표 없이 입력해 주세요."
+            id="user-id"
+            placeholder="사용하실 아이디를 입력해주세요."
+            autocomplete="off"
             minlength="8"
             maxlength="16"
           />
-          <input type="text" placeholder="생년월일 예)19900101" />
+          <span class="guide guide-user-id">아이디는 영문자나 숫자의 조합으로 6~18자리 사용해야합니다.</span>
+
+          <input
+            type="password"
+            id="password"
+            placeholder="비밀번호를 입력해주세요. 영문자+숫자+특수문자 8~16자리(괄호 사용불가)"
+            minlength="8"
+            maxlength="16"
+          />
+          <span class="guide guide-password">비밀번호는 영문자+숫자+특수문자 조합으로 8~16자리 사용해야합니다.(괄호사용불가)</span>
+
+          <input
+            type="password"
+            id="password-again"
+            placeholder="패스워드를 다시 입력해 주세요."
+            minlength="8"
+            maxlength="16"
+          />
+          <span class="guide guide-password-again">비밀번호가 일치하지 않습니다.</span>
+
+          <input
+            type="text"
+            id="user-name"
+            placeholder="이름을 입력해 주세요."
+          />
+          <span class="guide guide-user-name">한글만 입력 가능합니다.</span>
+
+          <input
+            type="text"
+            id="mobile"
+            placeholder="휴대폰 번호 '-'표 없이 입력해 주세요."
+            maxlength="11"
+          />
+          <span class="guide guide-mobile">휴대폰 번호 10~11자리를 정확하게 입력해주세요. 숫자만 입력 가능합니다.</span>
+
+          <input
+            type="text"
+            id="birth"
+            placeholder="생년월일을 입력해주세요. 예)19900101"
+            maxlength="16"
+          />
+          <span class="guide guide-birth">생년월일 8자리를 정확하게 입력해주세요. 숫자만 입력 가능합니다.</span>
+
           <div class="sex">
             <input type="radio" name="sex" value="man" id="man" />
             <label for="man"><i class="fa-solid fa-check"></i>남성</label>
@@ -278,7 +311,7 @@
               </p>
             </div>
             <div class="agree">
-              <input type="checkbox" />
+              <input type="checkbox" id="term-agree"/>
               <span>[필수] 약관에 동의 합니다.</span>
             </div>
           </div>
@@ -330,12 +363,12 @@
               </tbody>
             </table>
             <div class="agree">
-              <input type="checkbox" />
+              <input type="checkbox" id="personal-agree"/>
               <span>[필수] 개인정보 수집 이용동의</span>
             </div>
           </div>
 
-          <div class="personal-info selction">
+          <div class="personal-info">
             <h2>선택적 개인정보 수집 이용동의</h2>
             <table>
               <colgroup>
@@ -367,12 +400,7 @@
             </div>
           </div>
 
-          <input
-            type="submit"
-            class="submit-btn"
-            value="회원가입하기"
-            style="font-size: 18px; font-weight: 600"
-          />
+          <button type="button" class="submit-btn" onclick="joinValidation()">회원가입하기</button>
         </form>
       </div>
     </main>
