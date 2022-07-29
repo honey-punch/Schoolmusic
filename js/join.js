@@ -53,6 +53,22 @@ const checkMobile = /^\d{10,11}$/;
 const checkBirth = /^\d{8}$/;
 
 // 회원가입하기 버튼 누르면 실행되는 validation 함수
+function alertPlaceholder(element) {
+  if (element.value == '') {
+    alert(element.getAttribute('placeholder'));
+    element.focus();
+    return false;
+  }
+}
+
+function alertGuide(element, check, guide) {
+  if (element.value.match(check) == null) {
+    alert(guide.textContent);
+    element.focus();
+    return false;
+  }
+}
+
 function joinValidation() {
   
   // id
