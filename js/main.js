@@ -1,3 +1,5 @@
+alert('현재는 우측 상단의 유저 아이콘을 통하여 로그인과 회원가입만 이용하실 수 있습니다.');
+
 // header
 // category menu
 const categoryBtnOpen = document.querySelector('.category-btn.open');
