@@ -52,93 +52,72 @@ const checkUserName = /[ㄱ-힣]/;
 const checkMobile = /^\d{10,11}$/;
 const checkBirth = /^\d{8}$/;
 
-// 회원가입하기 버튼 누르면 실행되는 validation 함수
+// joinValidation안에 들어갈 callBack함수
 function alertPlaceholder(element) {
-  if (element.value == '') {
-    alert(element.getAttribute('placeholder'));
-    element.focus();
-    return false;
-  }
+  alert(element.getAttribute('placeholder'));
+  element.focus();
 }
 
-function alertGuide(element, check, guide) {
-  if (element.value.match(check) == null) {
+function alertGuide(element, guide) {
     alert(guide.textContent);
     element.focus();
-    return false;
-  }
 }
 
+// 회원가입하기 버튼 누르면 실행되는 alert함수
 function joinValidation() {
-  
   // id
-  if (userId.value == '') {
-    alert(userId.getAttribute('placeholder'));
-    userId.focus();
-    return false;
+  if (userId.value === '') {
+    alertPlaceholder(userId)
+    return false
   }
-
-  if (userId.value.match(checkUserId) == null) {
-    alert(guideUserId.textContent);
-    userId.focus();
-    return false;
+  if (!userId.value.match(checkUserId)) {
+    alertGuide(userId, guideUserId)
+    return false
   }
 
   // password
-  if (password.value == '') {
-    alert(password.getAttribute('placeholder'));
-    password.focus();
+  if (password.value === '') {
+    alertPlaceholder(password)
+    return false;
+  }
+  if (!password.value.match(checkPassword)) {
+    alertGuide(password, guidePassword)
     return false;
   }
 
-  if (password.value.match(checkPassword) == null) {
-    alert(guidePassword.textContent);
-    password.focus();
-    return false;
-  }
-
+  // password again
   if (password.value !== passwordAgain.value) {
-    alert(guidePasswordAgain.textContent);
-    passwordAgain.focus();
+    alertGuide(passwordAgain, guidePasswordAgain)
     return false;
   }
 
   // name
-  if (userName.value == '') {
-    alert(userName.getAttribute('placeholder'));
-    userName.focus();
+  if (userName.value === '') {
+    alertPlaceholder(userName)
     return false;
   }
-
-  if (userName.value.match(checkUserName) == null) {
-    alert(guideUserName.textContent);
-    userName.focus();
+  if (!userName.value.match(checkUserName)) {
+    alertGuide(userName, guideUserName)
     return false;
   }
 
   //mobile
-  if (mobile.value == '') {
-    alert(mobile.getAttribute('placeholder'));
-    mobile.focus();
+  if (mobile.value === '') {
+    alertPlaceholder(mobile)
     return false;
   }
-
-  if (mobile.value.match(checkMobile) == null) {
-    alert(guideMobile.textContent);
-    mobile.focus();
+  if (!mobile.value.match(checkMobile)) {
+    alertGuide(mobile, guideMobile)
     return false;
   }
 
   // birth
-  if (birth.value == '') {
-    alert(birth.getAttribute('placeholder'));
-    birth.focus();
+  if (birth.value === '') {
+    alertPlaceholder(birth)
     return false;
   }
-
-  if (birth.value.match(checkBirth) == null) {
-    alert(guideBirth.textContent);
-    birth.focus();
+  if (!birth.value.match(checkBirth)) {
+    alertGuide(birth, guideBirth)
     return false;
   }
 
@@ -182,7 +161,7 @@ passwordAgain.addEventListener('input', () => {
 
 function showGuide(element, check, guide) {
   element.addEventListener('input', () => {
-    if(element.value.match(check) == null) {
+    if(!element.value.match(check)) {
       guide.classList.add('flex');
     } else {
       guide.classList.remove('flex');
