@@ -161,10 +161,18 @@ let IntervalId = setInterval(() => {
   
 nextBtn.addEventListener("click", () => {
   nextMove();
+  clearInterval(IntervalId);
+  IntervalId = setInterval(() => {
+    nextMove();
+  }, 3000);
 });
 
 prevBtn.addEventListener("click", () => {
   prevMove();
+  clearInterval(IntervalId);
+  IntervalId = setInterval(() => {
+    nextMove();
+  }, 3000);
 });
 
 slide.addEventListener("mouseover", () => {
