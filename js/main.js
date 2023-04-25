@@ -1,4 +1,4 @@
-alert('현재는 우측 상단의 유저 아이콘을 통하여 로그인과 회원가입만 이용하실 수 있습니다.');
+//alert('현재는 우측 상단의 유저 아이콘을 통하여 로그인과 회원가입만 이용하실 수 있습니다.');
 
 // header
 // category menu
@@ -44,38 +44,33 @@ const nextBtn = document.querySelector(".right");
 let slideItems = document.querySelectorAll(".banner-list li");
 const maxSlide = slideItems.length;
 
-// 버튼 클릭할 때 마다 현재 슬라이드가 어디인지 알려주기 위한 변수
-let currSlide = 1;
-
 // 페이지네이션 생성
 const pagination = document.querySelector(".pagination");
+const paginationItem = document.querySelector(".pagination li");
 
-for (let i = 0; i < maxSlide; i++) {
-  if (i === 0) {
-    pagination.innerHTML += `<li class="active">•</li>`
-  } else {
-    pagination.innerHTML += `<li>•</li>`;
-  }
+for (let i = 0; i < maxSlide - 1; i++) {
+  const copy = paginationItem.cloneNode(true)
+  pagination.appendChild(copy)
 }
 
 const paginationItems = document.querySelectorAll(".pagination > li");
+paginationItems[0].classList.add('active')
 
 // 무한 슬라이드를 위해 start, end 슬라이드 복사 및 각 위치에 추가
 const startSlide = slideItems[0];
 const endSlide = slideItems[slideItems.length - 1];
 
-const startElem = document.createElement(startSlide.tagName);
-const endElem = document.createElement(endSlide.tagName);
-
-endElem.innerHTML = endSlide.innerHTML;
-startElem.innerHTML = startSlide.innerHTML;
+const startElem = startSlide.cloneNode(true);
+const endElem = endSlide.cloneNode(true);
 
 startSlide.before(endElem);
 endSlide.after(startElem);
 
-// 슬라이드 전체를 선택해 값을 변경해주기 위해 슬라이드 전체 선택하기
-slideItems = document.querySelectorAll(".banner-list li");
+// 현재 슬라이드의 위치를 알려주는 변수설정, 앞뒤로 복제된 슬라이드 배열에 포함
+let currSlide = 1;
 let offset = slideWidth * currSlide;
+
+slideItems = document.querySelectorAll(".banner-list li");
 slideItems.forEach(li => {
   li.setAttribute("style", `left: ${-offset}px`);
 });
@@ -100,7 +95,6 @@ function nextMove() {
     });
     currSlide++;
     offset = slideWidth * currSlide;
-    // 각 슬라이드 아이템의 left에 offset 적용
     // setTimeout을 사용하는 이유는 비동기 처리를 이용해 transition이 제대로 적용되게 하기 위함
     setTimeout(() => {
       slideItems.forEach(li => {
@@ -132,7 +126,6 @@ function prevMove() {
     });
     currSlide--;
     offset = slideWidth * currSlide;
-    // 각 슬라이드 아이템의 left에 offset 적용
     // setTimeout을 사용하는 이유는 비동기 처리를 이용해 transition이 제대로 적용되게 하기 위함
     setTimeout(() => {
       slideItems.forEach(li => {
@@ -144,14 +137,6 @@ function prevMove() {
     paginationItems[currSlide - 1].classList.add("active");
   }
 }
-
-nextBtn.addEventListener("click", () => {
-  nextMove();
-});
-
-prevBtn.addEventListener("click", () => {
-  prevMove();
-});
 
 window.addEventListener("resize", () => {
   slideWidth = slide.clientWidth;
@@ -174,6 +159,14 @@ let IntervalId = setInterval(() => {
   nextMove();
 }, 3000);
   
+nextBtn.addEventListener("click", () => {
+  nextMove();
+});
+
+prevBtn.addEventListener("click", () => {
+  prevMove();
+});
+
 slide.addEventListener("mouseover", () => {
   clearInterval(IntervalId);
 });
