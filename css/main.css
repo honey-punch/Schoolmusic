@@ -129,9 +129,6 @@ header nav .inner .menu .category .category-area {
     padding-bottom: 30px;
     position: relative;
 }
-header nav .inner .menu .category .category-area.grid {
-    display: grid;
-}
 header nav .inner .menu .category .category-area .submenu {
     padding: 20px;
     box-sizing: border-box;

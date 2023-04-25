@@ -8,7 +8,7 @@ const categoryArea = document.querySelector('.category-area');
 const category = document.querySelector('.category');
 
 categoryBtnOpen.addEventListener('click', () => {
-  categoryArea.classList.add('grid');
+  categoryArea.style.display = 'grid'
   categoryBtnOpen.style.display = 'none';
   categoryBtnClose.style.display = 'inline';
   category.style.background = 'var(--dark-grey-color)';
@@ -21,7 +21,7 @@ categoryBtnOpen.addEventListener('mouseout', () => {
 })
 
 categoryBtnClose.addEventListener('click', () => {
-  categoryArea.classList.remove('grid');
+  categoryArea.style.display = 'none'
   categoryBtnOpen.style.display = 'inline';
   categoryBtnClose.style.display = 'none';
   category.style.background = 'var(--main-color)';
