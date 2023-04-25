@@ -1,4 +1,4 @@
-//alert('현재는 우측 상단의 유저 아이콘을 통하여 로그인과 회원가입만 이용하실 수 있습니다.');
+alert('현재는 우측 상단의 유저 아이콘을 통하여 로그인과 회원가입만 이용하실 수 있습니다.');
 
 // header
 // category menu
@@ -193,7 +193,6 @@ document.querySelector(".tabmenu li:first-child .tab-list").classList.add('flex'
 // tab icon & unit img & unit info
 const tabTitleList = document.querySelectorAll(".tab-title");
 const tabList = document.querySelectorAll(".tab-list");
-
 
 tabTitleList.forEach((title, i) => {
   title.addEventListener('click', () => {
